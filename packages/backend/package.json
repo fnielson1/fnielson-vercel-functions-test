@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc -b --force",
+    "build": "npx tsc -b --force && shx cp -r dist/* ../../dist/",
     "start": "node dist/server.js",
     "dev": "ts-node src/server.ts"
   }
