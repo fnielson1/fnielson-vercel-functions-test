@@ -1,5 +1,16 @@
 {
   "git": {
     "automaticGitDeploys": true
-  }
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "packages/backend/api/$1"
+    }
+  ]
 }
