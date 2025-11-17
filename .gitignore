@@ -1,0 +1,5 @@
+.idea
+*.js
+*.d.ts
+packages/**/dist
+node_modules
