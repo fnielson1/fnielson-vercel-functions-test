@@ -4,13 +4,13 @@
     "module": "commonjs",
     "declaration": true,
     "declarationMap": true,
-    "outDir": "../../dist",
+    "outDir": "../../api",
     "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src", "api"],
+  "include": ["src", "*.ts"],
   "exclude": ["node_modules", "dist"]
 }
 
