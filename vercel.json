@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "api",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/api/(.*)",
