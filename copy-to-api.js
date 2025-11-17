@@ -13,9 +13,7 @@ if (fs.existsSync(apiFolder)) {
 // Recreate api folder
 fs.mkdirSync(apiFolder);
 
-// Copy all files from dist to api
-fs.readdirSync(distFolder).forEach(file => {
-  fs.copyFileSync(path.join(distFolder, file), path.join(apiFolder, file));
-});
+// Recursively copy dist -> api
+fs.cpSync(distFolder, apiFolder, { recursive: true });
 
 console.log('Copied dist to api/');
