@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm -r build",
   "functions": {
-    "api/*.ts": {
+    "api/*.js": {
       "runtime": "vercel-nodejs@18.x"
     }
   }
