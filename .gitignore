@@ -3,3 +3,5 @@
 *.d.ts
 packages/**/dist
 node_modules
+tsconfig.tsbuildinfo
+*.ts.map
