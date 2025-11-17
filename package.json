@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm -r build && shx cp index.html ./dist/index.html",
     "clean": "shx rm -rf ./dist",
-    "start": "node ./dist/server.js",
-    "dev": "ts-node src/index.ts"
+    "start": "node ./dist/src/server.js",
+    "dev": "ts-node ./packages/backend/src/server.ts"
   },
   "devDependencies": {
     "ts-node": "^10.0.0",
