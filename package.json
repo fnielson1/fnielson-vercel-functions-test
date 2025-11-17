@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "pnpm -F backend build && pnpm run copytoapi",
-    "clean": "shx rm -rf ./dist",
-    "copytoapi": "shx rm -rf ./api && shx mkdir -p ./api && shx cp -r ./packages/backend/dist/* ./api/",
+    "build": "pnpm -F backend build && node copy-to-api.js",
     "start": "node ./dist/api/server.js",
     "dev": "ts-node ./packages/backend/src/server.ts"
   },
   "devDependencies": {
     "ts-node": "^10.0.0",
-    "typescript": "^5.9.3",
-    "shx": "^0.4.0"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@types/express": "^5.0.5",
