@@ -5,7 +5,7 @@
   "scripts": {
     "build": "pnpm -F backend build && pnpm run copytoapi",
     "clean": "shx rm -rf ./dist",
-    "copytoapi": "shx cp -r ./packages/backend/dist ./api",
+    "copytoapi": "shx mkdir ./api && shx cp -r ./packages/backend/dist/* ./api",
     "start": "node ./dist/api/server.js",
     "dev": "ts-node ./packages/backend/src/server.ts"
   },
