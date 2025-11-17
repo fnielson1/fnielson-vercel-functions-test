@@ -1,4 +1,3 @@
 {
-  "buildCommand": "pnpm -r run build",
-  "outputDirectory": "public"
+  "buildCommand": "pnpm -r run build"
 }
