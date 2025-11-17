@@ -2,7 +2,7 @@
   "buildCommand": "pnpm -r build",
   "functions": {
     "api/**/*.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "@vercel/node@22.x"
     }
   }
 }
