@@ -1,8 +1,7 @@
 {
-  "buildCommand": "pnpm -r build",
-  "functions": {
-    "api/*.js": {
-      "runtime": "vercel-nodejs@18.x"
-    }
-  }
+  "buildCommand": "pnpm -r run build",
+  "outputDirectory": ".",
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" }
+  ]
 }
