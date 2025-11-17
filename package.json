@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "pnpm -F backend build",
+    "build": "pnpm -F backend build && pnpm run copytoapi",
     "clean": "shx rm -rf ./dist",
+    "copytoapi": "shx cp -r ./packages/backend/dist ./api",
     "start": "node ./dist/api/server.js",
     "dev": "ts-node ./packages/backend/src/server.ts"
   },

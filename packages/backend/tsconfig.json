@@ -5,7 +5,7 @@
     "module": "commonjs",
     "declaration": true,
     "declarationMap": true,
-    "outDir": "../../api",
+    "outDir": "dist",
     "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
