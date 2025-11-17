@@ -1,7 +1,4 @@
 {
   "outputDirectory": ".",
-  "buildCommand": "pnpm -r build",
-  "functions": {
-    "api/**/*.js": { "runtime": "@vercel/node@^22.0.0" }
-  }
+  "buildCommand": "pnpm -r build"
 }
