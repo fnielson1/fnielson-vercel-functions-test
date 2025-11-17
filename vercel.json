@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "builds": [
+    {
+      "src": "packages/backend/api/**/*.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "packages/backend/api/$1"
+    }
+  ]
+}
