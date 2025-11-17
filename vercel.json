@@ -1,13 +1,4 @@
 {
   "buildCommand": "pnpm -r run build",
-  "outputDirectory": ".",
-  "functions": {
-    "api/*.ts": {
-      "runtime": "vercel-nodejs@20.x"
-    }
-  },
-  "routes": [
-    {"src": "/", "dest": "/public/index.html" },
-    { "src": "/api/(.*)", "dest": "/api/$1.js" }
-  ]
+  "outputDirectory": "public"
 }
