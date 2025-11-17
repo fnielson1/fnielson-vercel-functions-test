@@ -4,7 +4,6 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "pnpm -F backend build && node copy-to-api.js",
-    "clean": "shx rm -rf ./dist",
     "start": "node ./dist/api/server.js",
     "dev": "ts-node ./packages/backend/src/server.ts"
   },
