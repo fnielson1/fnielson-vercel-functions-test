@@ -18,6 +18,9 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
     devDependencies:
+      shx:
+        specifier: ^0.4.0
+        version: 0.4.0
       ts-node:
         specifier: ^10.0.0
         version: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
